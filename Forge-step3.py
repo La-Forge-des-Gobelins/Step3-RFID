@@ -11,7 +11,7 @@ WIFI_SSID = "Cudy-EFFC"
 WIFI_PASSWORD = "33954721"
 
 # Configuration WebSocket
-WEBSOCKET_URL = "ws://192.168.10.250:8080/say"  # Adresse à adapter
+WEBSOCKET_URL = "ws://192.168.10.244:8080/step3"  # Adresse à adapter
 
 # Configuration RFID
 spi = SPI(1, baudrate=1000000, polarity=0, phase=0, sck=Pin(18), mosi=Pin(23), miso=Pin(19))
