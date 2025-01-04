@@ -18,7 +18,7 @@ class WebSocketClient:
             self.port = int(port)
         else:
             self.host = host
-            self.port = 80
+            self.port = 8080
         self.path = '/' + path
         
     def _generate_key(self):
@@ -201,5 +201,4 @@ class WebSocketClient:
             except:
                 pass
         self.connected = False
-
 
