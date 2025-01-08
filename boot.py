@@ -16,7 +16,7 @@ def setup_connection():
             ws = WebSocketClient(ws_client.WEBSOCKET_URL)
             if ws.connect():
                 print("WebSocket connection established")
-                ws.send("Seau connecté")
+                ws.send("connect")
                 return ws
         print("Failed to establish connection")
         return None
