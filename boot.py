@@ -51,7 +51,8 @@ try:
             print("Message reçu :", msg)
             
             if msg == "Start":
-                            
+                # Régler le volume à 50%
+                kt.SetVolume(100)
                 # Activer le relais
                 print("Activation du relais...")
                 relay.value(1)
@@ -71,6 +72,21 @@ try:
             elif msg == "ping":
                 print("ping")
                 ws.send("Seau-pong")
+                
+            elif msg == "Play":
+                # Régler le volume à 50%
+                kt.SetVolume(70)
+                print("Playing song")
+                
+                # Play music
+                print("Playing music")
+                # Jouer le premier fichier (index commence à 1)
+                kt.PlaySpecific(2)
+                
+                time.sleep(10)    # Attendre 5 secondes
+                        
+                kt.Stop()
+                
         else:
             print("Failed to send message")
             # Attempt to reconnect if sending fails
