@@ -49,7 +49,8 @@ try:
         if ws:
             msg = ws.receive()
             print("Message reçu :", msg)
-            if msg == "Seau-Start":
+            
+            if msg == "Start":
                             
                 # Activer le relais
                 print("Activation du relais...")
@@ -94,3 +95,4 @@ finally:
         ws.close()
     relay.value(0)  # Ensure relay is off when exiting
     led.value(0)    # Ensure LED is off when exiting
+
