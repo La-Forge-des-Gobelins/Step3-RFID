@@ -61,7 +61,7 @@ try:
                 print("Playing music")
                 # Jouer le premier fichier (index commence à 1)
                 kt.PlaySpecific(1)
-                kt.EnableLoop()
+                # kt.EnableLoop()
                       
                 time.sleep(5)    # Attendre 5 secondes
                         
